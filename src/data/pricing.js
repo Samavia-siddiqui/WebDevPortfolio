@@ -1,0 +1,83 @@
+export const pricingPlans = [
+  {
+    id: 'basic',
+    name: 'Basic',
+    subtitle: 'Landing Page',
+    price: {
+      pkr: '25,000',
+      usd: '250',
+    },
+    delivery: '3-5 days',
+    revisions: '1 round',
+    pages: '1 page, up to 5 sections',
+    tech: 'React + Tailwind',
+    features: [
+      'Contact form integration',
+      'Basic SEO meta tags',
+      'Fully mobile responsive',
+      'Fast performance optimization',
+      'Deployment included',
+    ],
+    ctaText: 'Request a Quote',
+    projectType: 'Landing Page',
+    highlighted: false,
+  },
+  {
+    id: 'standard',
+    name: 'Standard',
+    subtitle: 'Business Website',
+    price: {
+      pkr: '50,000',
+      usd: '500',
+    },
+    delivery: '7-10 days',
+    revisions: '2 rounds',
+    pages: 'Up to 5 pages',
+    tech: 'React + Tailwind + Framer Motion',
+    features: [
+      'Custom animations & transitions',
+      'Contact form + direct WhatsApp action',
+      'SEO fundamentals & social meta cards',
+      'Mobile-first responsive architecture',
+      'Deployment & custom domain connection',
+    ],
+    ctaText: 'Request a Quote',
+    projectType: 'Business Website',
+    highlighted: true,
+  },
+  {
+    id: 'premium',
+    name: 'Premium',
+    subtitle: 'Full Stack App',
+    price: {
+      pkr: '120,000',
+      usd: '1,200',
+    },
+    delivery: '3-6 weeks (by scope)',
+    revisions: '3 rounds',
+    pages: 'Custom (app screens)',
+    tech: 'React + Node/Express + MongoDB',
+    features: [
+      'Authentication & role-based access',
+      'MongoDB database & schema design',
+      'Custom REST API architecture',
+      'Admin / user dashboard interface',
+      'Full server deployment & handover',
+    ],
+    ctaText: 'Book a scoping call',
+    projectType: 'Web App',
+    highlighted: false,
+  },
+];
+
+export const pricingNotes = {
+  customScope: 'E-commerce, payment gateways and custom features are quoted by scope.',
+  notIncluded: [
+    'Domain and paid hosting (bought by you, in your name)',
+    'Copywriting and final text drafting',
+    'Images / brand logo (client provides)',
+    'Paid third-party services and subscriptions',
+    'Payment gateway / e-commerce logic (custom quote)',
+    'Ongoing marketing & SEO campaigns',
+  ],
+};
