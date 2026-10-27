@@ -65,15 +65,7 @@ export default function Contact({ preselectedType }) {
     setStatus('loading');
     setErrorMessage('');
 
-    const formspreeUrl = import.meta.env.VITE_FORMSPREE_URL;
-
-    if (!formspreeUrl || formspreeUrl.includes('your_form_id') || formspreeUrl.includes('sample_form_id')) {
-      // Graceful fallback for local development preview without live Formspree endpoint
-      setTimeout(() => {
-        setStatus('success');
-      }, 800);
-      return;
-    }
+    const formspreeUrl = import.meta.env.VITE_FORMSPREE_URL || 'https://formspree.io/f/xrpppbnq';
 
     try {
       const response = await fetch(formspreeUrl, {
