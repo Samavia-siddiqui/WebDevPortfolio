@@ -48,7 +48,7 @@ export default function Hero() {
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
               className="inline-flex items-center gap-2 self-start bg-white border border-accent/30 px-3.5 py-1.5 rounded-full mb-4 shadow-sm"
             >
-              <Sparkles className="w-3.5 h-3.5 text-accent" />
+              <Sparkles className="w-3.5 h-3.5 text-accent-text" />
               <span className="text-[11px] font-black uppercase tracking-widest text-zinc-600">
                 CREATOR &times; ENGINEER
               </span>
@@ -112,10 +112,10 @@ export default function Hero() {
                   setIsWaving(true);
                   setTimeout(() => setIsWaving(false), 2200);
                 }}
-                className="inline-flex items-center gap-1.5 text-xs font-black text-accent uppercase tracking-wider bg-accent/10 hover:bg-accent/20 border border-accent/30 px-5 py-3.5 rounded-full transition-all duration-200 transform hover:scale-105 shadow-sm active:scale-95"
+                className="inline-flex items-center gap-1.5 text-xs font-black text-accent-text uppercase tracking-wider bg-accent/15 hover:bg-accent/25 border border-accent/40 px-5 py-3.5 rounded-full transition-all duration-200 transform hover:scale-105 shadow-sm active:scale-95"
                 aria-label="Make Samavia wave"
               >
-                <span className="animate-bounce inline-block text-accent">↗</span>
+                <span className="animate-bounce inline-block text-accent-text">↗</span>
                 <span>HI 👋</span>
               </button>
             </motion.div>
@@ -148,8 +148,8 @@ export default function Hero() {
             >
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black tracking-tight leading-tight text-dark">
                 Hi, I&apos;m{' '}
-                <span className="font-extrabold italic text-accent">
-                  Samavia<span className="text-accent">.</span>
+                <span className="font-extrabold italic text-accent-text">
+                  Samavia<span className="text-accent-text">.</span>
                 </span>
               </h2>
             </motion.div>

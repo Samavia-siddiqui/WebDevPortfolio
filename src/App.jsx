@@ -38,7 +38,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-dark text-light font-sans selection:bg-accent selection:text-dark">
+    <div className="min-h-screen bg-dark text-light font-sans selection:bg-accent selection:text-accent-ink">
       {/* Floating Pill Navigation Header */}
       <Navbar />
 

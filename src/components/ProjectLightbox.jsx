@@ -149,7 +149,7 @@ export default function ProjectLightbox({
               >
                 <div className="flex items-center justify-between pb-3 border-b border-zinc-800">
                   <div className="flex items-center gap-1.5">
-                    <span className="w-2.5 h-2.5 rounded-full bg-rose-500/80" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-red-500/80" />
                     <span className="w-2.5 h-2.5 rounded-full bg-amber-500/80" />
                     <span className="w-2.5 h-2.5 rounded-full bg-emerald-500/80" />
                   </div>
@@ -233,7 +233,7 @@ export default function ProjectLightbox({
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full sm:w-auto min-h-[44px] inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-dark font-black text-xs uppercase tracking-wider px-6 py-3.5 rounded-full transition-colors shadow-lg"
+                    className="w-full sm:w-auto min-h-[44px] inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-hover text-accent-ink font-black text-xs uppercase tracking-wider px-6 py-3.5 rounded-full transition-colors shadow-lg"
                   >
                     <span>Live Demo</span>
                     <ExternalLink className="w-4 h-4 stroke-[2.5]" aria-hidden="true" />

@@ -86,7 +86,7 @@ export default function Work() {
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
               className="mb-2"
             >
-              <span className="text-xs font-black uppercase tracking-widest text-accent">
+              <span className="text-xs font-black uppercase tracking-widest text-accent-text">
                 Selected Work
               </span>
             </motion.div>
@@ -122,7 +122,7 @@ export default function Work() {
                   onClick={() => setSelectedCategory(cat.id)}
                   className={`px-3 py-1.5 rounded-full text-[11px] font-black uppercase tracking-wider transition-all duration-200 border ${
                     isActive
-                      ? 'bg-dark text-light border-dark shadow-md'
+                      ? 'bg-accent text-accent-ink border-accent shadow-md'
                       : 'bg-white text-zinc-600 hover:text-dark hover:border-zinc-400 border-light-border'
                   }`}
                 >

@@ -22,7 +22,7 @@ export default function About() {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="mb-2"
         >
-          <span className="text-xs font-black uppercase tracking-widest text-accent">
+          <span className="text-xs font-black uppercase tracking-widest text-accent-text">
             About
           </span>
         </motion.div>
@@ -72,7 +72,7 @@ export default function About() {
 
               {/* Secondary static thin accent border */}
               <div
-                className="absolute -inset-1 rounded-full border border-accent pointer-events-none shadow-[0_0_15px_rgba(244,63,94,0.2)]"
+                className="absolute -inset-1 rounded-full border border-accent pointer-events-none shadow-[0_0_15px_rgba(255,186,100,0.3)]"
                 aria-hidden="true"
               />
 
@@ -135,7 +135,7 @@ export default function About() {
               className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-4 border-t border-light-border"
             >
               <div className="flex items-center gap-2.5 p-2.5 sm:p-3 rounded-xl bg-light-surface border border-light-border">
-                <MapPin className="w-4 h-4 text-accent shrink-0" />
+                <MapPin className="w-4 h-4 text-accent-text shrink-0" />
                 <div>
                   <span className="text-[10px] font-black uppercase tracking-wider text-zinc-500 block">
                     Location
@@ -147,7 +147,7 @@ export default function About() {
               </div>
 
               <div className="flex items-center gap-2.5 p-2.5 sm:p-3 rounded-xl bg-light-surface border border-light-border">
-                <Code2 className="w-4 h-4 text-accent shrink-0" />
+                <Code2 className="w-4 h-4 text-accent-text shrink-0" />
                 <div>
                   <span className="text-[10px] font-black uppercase tracking-wider text-zinc-500 block">
                     Core Specialization
@@ -159,7 +159,7 @@ export default function About() {
               </div>
 
               <div className="flex items-center gap-2.5 p-2.5 sm:p-3 rounded-xl bg-light-surface border border-light-border">
-                <Sparkles className="w-4 h-4 text-accent shrink-0" />
+                <Sparkles className="w-4 h-4 text-accent-text shrink-0" />
                 <div>
                   <span className="text-[10px] font-black uppercase tracking-wider text-zinc-500 block">
                     Frontend Focus
@@ -171,7 +171,7 @@ export default function About() {
               </div>
 
               <div className="flex items-center gap-2.5 p-2.5 sm:p-3 rounded-xl bg-light-surface border border-light-border">
-                <CheckCircle2 className="w-4 h-4 text-accent shrink-0" />
+                <CheckCircle2 className="w-4 h-4 text-accent-text shrink-0" />
                 <div>
                   <span className="text-[10px] font-black uppercase tracking-wider text-zinc-500 block">
                     Client Commitment

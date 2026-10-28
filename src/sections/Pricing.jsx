@@ -35,7 +35,7 @@ export default function Pricing({ onSelectPlan }) {
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
               className="mb-2"
             >
-              <span className="text-xs font-black uppercase tracking-widest text-accent">
+              <span className="text-xs font-black uppercase tracking-widest text-accent-text">
                 Pricing
               </span>
             </motion.div>
@@ -122,7 +122,7 @@ export default function Pricing({ onSelectPlan }) {
               >
                 {/* Standard Card Dominant Badge */}
                 {isStandard && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-light px-3.5 py-0.5 rounded-full text-[9px] font-black uppercase tracking-widest flex items-center gap-1 shadow-md">
+                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-accent-ink px-3.5 py-0.5 rounded-full text-[9px] font-black uppercase tracking-widest flex items-center gap-1 shadow-md">
                     <Sparkles className="w-2.5 h-2.5 stroke-[2.5]" />
                     <span>Most Popular</span>
                   </div>
@@ -141,7 +141,7 @@ export default function Pricing({ onSelectPlan }) {
 
                   {/* Price Tag */}
                   <div className="mt-2.5 mb-4">
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-accent block mb-0.5">
+                    <span className={`text-[10px] font-bold uppercase tracking-wider block mb-0.5 ${isStandard ? 'text-accent' : 'text-accent-text'}`}>
                       Starting from
                     </span>
                     <div className="flex items-baseline gap-1">
@@ -167,7 +167,7 @@ export default function Pricing({ onSelectPlan }) {
                     </div>
                     <div className="flex justify-between">
                       <span className="opacity-70">Tech Stack:</span>
-                      <span className="font-bold text-accent">{plan.tech}</span>
+                      <span className={`font-bold ${isStandard ? 'text-accent' : 'text-accent-text'}`}>{plan.tech}</span>
                     </div>
                   </div>
 
@@ -178,14 +178,14 @@ export default function Pricing({ onSelectPlan }) {
                     </span>
                     {plan.features.map((feat) => (
                       <div key={feat} className="flex items-start gap-2 text-xs">
-                        <Check className="w-3.5 h-3.5 text-accent shrink-0 mt-0.5 stroke-[2.5]" />
+                        <Check className={`w-3.5 h-3.5 shrink-0 mt-0.5 stroke-[2.5] ${isStandard ? 'text-accent' : 'text-accent-text'}`} />
                         <span className={isStandard ? 'text-zinc-200' : 'text-zinc-700'}>
                           {feat}
                         </span>
                       </div>
                     ))}
-                    <div className="flex items-start gap-2 text-xs font-bold text-accent pt-0.5">
-                      <Check className="w-3.5 h-3.5 text-accent shrink-0 mt-0.5 stroke-[2.5]" />
+                    <div className={`flex items-start gap-2 text-xs font-bold pt-0.5 ${isStandard ? 'text-accent' : 'text-accent-text'}`}>
+                      <Check className={`w-3.5 h-3.5 shrink-0 mt-0.5 stroke-[2.5] ${isStandard ? 'text-accent' : 'text-accent-text'}`} />
                       <span>Production Deployment</span>
                     </div>
                   </div>
@@ -197,7 +197,7 @@ export default function Pricing({ onSelectPlan }) {
                   onClick={() => handleCtaClick(plan)}
                   className={`w-full py-3 rounded-full font-black text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all duration-300 transform active:scale-95 shadow-sm ${
                     isStandard
-                      ? 'bg-accent hover:bg-accent-hover text-light'
+                      ? 'bg-accent hover:bg-accent-hover text-accent-ink'
                       : 'bg-dark hover:bg-zinc-800 text-light'
                   }`}
                 >
@@ -219,7 +219,7 @@ export default function Pricing({ onSelectPlan }) {
         {/* Not Included Notes Box (Compact) */}
         <div className="mt-6 p-4 sm:p-5 rounded-xl bg-light-surface border border-light-border max-w-3xl mx-auto">
           <div className="flex items-center gap-2 mb-2">
-            <HelpCircle className="w-3.5 h-3.5 text-accent" />
+            <HelpCircle className="w-3.5 h-3.5 text-accent-text" />
             <span className="text-[11px] font-black uppercase tracking-widest text-zinc-500">
               Honest Clarification &bull; What is Not Included
             </span>

@@ -7,9 +7,9 @@ export default function WhyMe() {
   const shouldReduceMotion = useReducedMotion();
 
   const icons = [
-    <CheckCircle2 className="w-5 h-5 text-accent shrink-0" key="scope" />,
+    <CheckCircle2 className="w-5 h-5 text-accent-text shrink-0" key="scope" />,
     <ShieldCheck className="w-5 h-5 text-accent shrink-0" key="preview" />,
-    <Zap className="w-5 h-5 text-accent shrink-0" key="stack" />,
+    <Zap className="w-5 h-5 text-accent-text shrink-0" key="stack" />,
   ];
 
   return (
@@ -27,7 +27,7 @@ export default function WhyMe() {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="mb-2"
         >
-          <span className="text-xs font-black uppercase tracking-widest text-accent">
+          <span className="text-xs font-black uppercase tracking-widest text-accent-text">
             Why Me
           </span>
         </motion.div>
@@ -66,7 +66,7 @@ export default function WhyMe() {
               <div className="relative z-10">
                 <div className="flex items-center gap-2 mb-3.5">
                   {icons[0]}
-                  <span className="text-[11px] font-black uppercase tracking-wider text-accent">
+                  <span className="text-[11px] font-black uppercase tracking-wider text-accent-text">
                     Step 1 Guarantee
                   </span>
                 </div>
@@ -79,7 +79,7 @@ export default function WhyMe() {
               </div>
               <div className="mt-5 pt-3.5 border-t border-light-border/70 flex items-center justify-between text-[11px] font-medium text-zinc-500 uppercase tracking-wider">
                 <span>No surprises</span>
-                <span className="text-accent font-bold">✓ Written Scope</span>
+                <span className="text-accent-text font-bold">✓ Written Scope</span>
               </div>
             </motion.div>
           )}
@@ -132,7 +132,7 @@ export default function WhyMe() {
               <div className="relative z-10">
                 <div className="flex items-center gap-2 mb-3.5">
                   {icons[2]}
-                  <span className="text-[11px] font-black uppercase tracking-wider text-accent">
+                  <span className="text-[11px] font-black uppercase tracking-wider text-accent-text">
                     Engineering
                   </span>
                 </div>
@@ -155,7 +155,7 @@ export default function WhyMe() {
                 <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-dark text-light">
                   Tailwind
                 </span>
-                <span className="px-2 py-0.5 rounded text-[10px] font-bold border border-accent/40 text-accent bg-accent/5">
+                <span className="px-2 py-0.5 rounded text-[10px] font-bold border border-accent/40 text-accent-text bg-accent/15">
                   Fast FCP
                 </span>
               </div>

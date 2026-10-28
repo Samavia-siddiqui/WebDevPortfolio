@@ -29,7 +29,7 @@ export default function FAQ() {
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
               className="mb-2"
             >
-              <span className="text-xs font-black uppercase tracking-widest text-accent">
+              <span className="text-xs font-black uppercase tracking-widest text-accent-text">
                 FAQ
               </span>
             </motion.div>
@@ -65,7 +65,7 @@ export default function FAQ() {
               Still have a question?{' '}
               <a
                 href="#contact"
-                className="text-dark font-black hover:text-accent underline underline-offset-4 transition-colors"
+                className="text-dark font-black hover:text-accent-text underline underline-offset-4 transition-colors"
               >
                 Send a quick direct message &rarr;
               </a>
@@ -90,10 +90,10 @@ export default function FAQ() {
                     className="w-full text-left flex items-start justify-between gap-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-lg"
                   >
                     <div className="flex items-start gap-3 md:gap-4">
-                      <span className="text-xs font-black text-accent tracking-widest shrink-0 mt-0.5">
+                      <span className="text-xs font-black text-accent-text tracking-widest shrink-0 mt-0.5">
                         /{faq.number}
                       </span>
-                      <h3 className="text-base sm:text-lg font-black uppercase tracking-tight text-dark group-hover:text-accent transition-colors duration-200 leading-snug">
+                      <h3 className="text-base sm:text-lg font-black uppercase tracking-tight text-dark group-hover:text-accent-text transition-colors duration-200 leading-snug">
                         {faq.question}
                       </h3>
                     </div>

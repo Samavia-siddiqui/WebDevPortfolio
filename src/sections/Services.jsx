@@ -31,7 +31,7 @@ export default function Services({ onSelectService }) {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="mb-2"
         >
-          <span className="text-xs font-black uppercase tracking-widest text-accent">
+          <span className="text-xs font-black uppercase tracking-widest text-accent-text">
             Services
           </span>
         </motion.div>
@@ -82,7 +82,7 @@ export default function Services({ onSelectService }) {
                 <div className="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-4 md:gap-6">
                   {/* Left: Number & Big Title */}
                   <div className="flex items-start gap-3 md:gap-6 max-w-xl">
-                    <span className="text-xs md:text-sm font-black text-accent tracking-widest shrink-0 mt-1">
+                    <span className="text-xs md:text-sm font-black text-accent-text group-hover:text-accent tracking-widest shrink-0 mt-1 transition-colors duration-300">
                       /{service.number}
                     </span>
                     <div>
@@ -93,7 +93,7 @@ export default function Services({ onSelectService }) {
                         {service.description}
                       </p>
                       <p className="mt-1 text-[11px] sm:text-xs font-medium text-zinc-500 group-hover:text-zinc-400 transition-colors duration-300">
-                        <span className="font-bold text-accent">Best for:</span> {service.bestFor}
+                        <span className="font-bold text-accent-text group-hover:text-accent transition-colors duration-300">Best for:</span> {service.bestFor}
                       </p>
                     </div>
                   </div>
@@ -123,7 +123,7 @@ export default function Services({ onSelectService }) {
                         Request a Quote
                       </span>
                       <div
-                        className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border border-dark/20 group-hover:border-accent group-hover:bg-accent text-dark group-hover:text-dark flex items-center justify-center transition-all duration-300 transform group-hover:rotate-45 shadow-sm"
+                        className="w-8 h-8 sm:w-9 sm:h-9 rounded-full border border-dark/20 group-hover:border-accent group-hover:bg-accent text-dark group-hover:text-accent-ink flex items-center justify-center transition-all duration-300 transform group-hover:rotate-45 shadow-sm"
                         aria-hidden="true"
                       >
                         <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 stroke-[2.5]" />

@@ -72,7 +72,7 @@ export default function ProjectCard({
             {/* Browser top chrome */}
             <div className="flex items-center justify-between pb-2 border-b border-zinc-800/80">
               <div className="flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-rose-500/80" />
+                <span className="w-2 h-2 rounded-full bg-red-500/80" />
                 <span className="w-2 h-2 rounded-full bg-amber-500/80" />
                 <span className="w-2 h-2 rounded-full bg-emerald-500/80" />
               </div>
@@ -185,7 +185,7 @@ export default function ProjectCard({
           <button
             type="button"
             onClick={() => onOpenLightbox(project)}
-            className="w-11 h-11 sm:w-9 sm:h-9 rounded-full bg-zinc-800 group-hover:bg-accent text-zinc-300 group-hover:text-black flex items-center justify-center transition-all duration-300 transform group-hover:-rotate-45 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            className="w-11 h-11 sm:w-9 sm:h-9 rounded-full bg-zinc-800 group-hover:bg-accent text-zinc-300 group-hover:text-accent-ink flex items-center justify-center transition-all duration-300 transform group-hover:-rotate-45 shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
             aria-label={`Open details lightbox for ${project.name}`}
           >
             <ArrowRight className="w-4 h-4 stroke-[2.5]" aria-hidden="true" />

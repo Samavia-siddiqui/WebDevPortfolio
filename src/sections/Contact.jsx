@@ -111,7 +111,7 @@ export default function Contact({ preselectedType }) {
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           className="mb-2"
         >
-          <span className="text-xs font-black uppercase tracking-widest text-accent">
+          <span className="text-xs font-black uppercase tracking-widest text-accent-text">
             Contact
           </span>
         </motion.div>
@@ -153,7 +153,7 @@ export default function Contact({ preselectedType }) {
                 onClick={() => setActiveTab('whatsapp')}
                 className={`px-4 py-2 rounded-full text-xs font-black uppercase tracking-wider transition-all duration-200 flex items-center gap-2 ${
                   activeTab === 'whatsapp'
-                    ? 'bg-accent text-dark shadow-md'
+                    ? 'bg-accent text-accent-ink shadow-md'
                     : 'text-zinc-600 hover:text-dark'
                 }`}
                 aria-selected={activeTab === 'whatsapp'}
@@ -188,7 +188,7 @@ export default function Contact({ preselectedType }) {
                     <button
                       type="button"
                       onClick={() => setStatus('idle')}
-                      className="px-5 py-2 rounded-full text-xs font-black uppercase tracking-wider bg-accent text-dark hover:bg-accent-hover transition-colors"
+                      className="px-5 py-2 rounded-full text-xs font-black uppercase tracking-wider bg-accent text-accent-ink hover:bg-accent-hover transition-colors"
                     >
                       Send Another Message
                     </button>
@@ -201,7 +201,7 @@ export default function Contact({ preselectedType }) {
                         htmlFor="contact-name"
                         className="block text-[11px] font-black uppercase tracking-wider text-zinc-600 mb-1.5"
                       >
-                        Your Name <span className="text-accent">*</span>
+                        Your Name <span className="text-accent-text">*</span>
                       </label>
                       <input
                         id="contact-name"
@@ -221,7 +221,7 @@ export default function Contact({ preselectedType }) {
                         htmlFor="contact-email"
                         className="block text-[11px] font-black uppercase tracking-wider text-zinc-600 mb-1.5"
                       >
-                        Your Email <span className="text-accent">*</span>
+                        Your Email <span className="text-accent-text">*</span>
                       </label>
                       <input
                         id="contact-email"
@@ -264,7 +264,7 @@ export default function Contact({ preselectedType }) {
                         htmlFor="contact-message"
                         className="block text-[11px] font-black uppercase tracking-wider text-zinc-600 mb-1.5"
                       >
-                        Project Brief / Message <span className="text-accent">*</span>
+                        Project Brief / Message <span className="text-accent-text">*</span>
                       </label>
                       <textarea
                         id="contact-message"
@@ -290,7 +290,7 @@ export default function Contact({ preselectedType }) {
                     <button
                       type="submit"
                       disabled={status === 'loading'}
-                      className="w-full py-3 rounded-full bg-accent hover:bg-accent-hover text-dark font-black text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all duration-300 shadow-md transform active:scale-98 disabled:opacity-70"
+                      className="w-full py-3 rounded-full bg-accent hover:bg-accent-hover text-accent-ink font-black text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition-all duration-300 shadow-md transform active:scale-98 disabled:opacity-70"
                     >
                       {status === 'loading' ? (
                         <>
@@ -319,7 +319,7 @@ export default function Contact({ preselectedType }) {
                 transition={{ duration: 0.3 }}
                 className="py-5 flex flex-col items-center text-center"
               >
-                <div className="w-14 h-14 rounded-full bg-accent/20 border border-accent/40 flex items-center justify-center text-accent mb-3">
+                <div className="w-14 h-14 rounded-full bg-accent/20 border border-accent/40 flex items-center justify-center text-accent-text mb-3">
                   <WhatsAppIcon className="w-7 h-7" />
                 </div>
 
@@ -334,7 +334,7 @@ export default function Contact({ preselectedType }) {
                   href="https://wa.me/923130080742"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2.5 bg-accent hover:bg-accent-hover text-dark font-black text-xs uppercase tracking-wider px-6 py-3 rounded-full transition-all duration-300 shadow-lg transform hover:scale-105"
+                  className="inline-flex items-center gap-2.5 bg-accent hover:bg-accent-hover text-accent-ink font-black text-xs uppercase tracking-wider px-6 py-3 rounded-full transition-all duration-300 shadow-lg transform hover:scale-105"
                 >
                   <WhatsAppIcon className="w-4 h-4" />
                   <span>Open WhatsApp (+92 313 0080742)</span>

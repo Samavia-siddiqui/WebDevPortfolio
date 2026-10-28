@@ -14,7 +14,7 @@ const NAV_LINKS = [
 function BuildLogoMark({ className = 'w-8 h-8' }) {
   return (
     <div
-      className={`${className} rounded-xl bg-dark border border-zinc-800 flex items-center justify-center shrink-0 shadow-sm group-hover:border-accent group-hover:shadow-[0_0_15px_rgba(244,63,94,0.3)] transition-all duration-300`}
+      className={`${className} rounded-xl bg-dark border border-zinc-800 flex items-center justify-center shrink-0 shadow-sm group-hover:border-accent group-hover:shadow-[0_0_15px_rgba(255,186,100,0.3)] transition-all duration-300`}
       aria-hidden="true"
     >
       <svg
@@ -24,13 +24,13 @@ function BuildLogoMark({ className = 'w-8 h-8' }) {
         className="w-4 h-4 transition-transform duration-300 group-hover:scale-110"
       >
         {/* Isometric 3D Builder Cube */}
-        <path d="M12 2.5L20 7L12 11.5L4 7L12 2.5Z" fill="#FDA4AF" />
-        <path d="M4 7V16L12 20.5V11.5L4 7Z" fill="#F43F5E" />
-        <path d="M12 11.5V20.5L20 16V7L12 11.5Z" fill="#BE123C" />
+        <path d="M12 2.5L20 7L12 11.5L4 7L12 2.5Z" fill="#FDE68A" />
+        <path d="M4 7V16L12 20.5V11.5L4 7Z" fill="#FFBA64" />
+        <path d="M12 11.5V20.5L20 16V7L12 11.5Z" fill="#B45309" />
         {/* Crisp Code Brackets */}
         <path
           d="M9 11.5L7.5 13L9 14.5M15 11.5L16.5 13L15 14.5"
-          stroke="#FFFFFF"
+          stroke="#1A0F00"
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -79,7 +79,7 @@ export default function Navbar() {
         >
           <BuildLogoMark className="w-7 h-7 sm:w-8 sm:h-8" />
           <span className="text-sm sm:text-base md:text-lg font-black tracking-tight text-dark font-sans select-none">
-            BuildBy<span className="text-accent">Samavia</span><span className="text-accent">.</span>
+            BuildBy<span className="text-accent-text">Samavia</span><span className="text-accent-text">.</span>
           </span>
         </a>
 
@@ -142,7 +142,7 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={(e) => handleScrollTo(e, link.href)}
-                  className="text-base font-bold text-dark hover:text-accent py-2 border-b border-zinc-100 flex items-center justify-between"
+                  className="text-base font-bold text-dark hover:text-accent-text py-2 border-b border-zinc-100 flex items-center justify-between"
                 >
                   <span>{link.name}</span>
                   <ArrowUpRight className="w-4 h-4 text-zinc-400" />
@@ -151,7 +151,7 @@ export default function Navbar() {
               <a
                 href="#contact"
                 onClick={(e) => handleScrollTo(e, '#contact')}
-                className="mt-2 text-center bg-accent text-dark font-black text-xs uppercase tracking-wider py-3 rounded-full hover:bg-accent-hover transition-colors shadow-md"
+                className="mt-2 text-center bg-accent text-accent-ink font-black text-xs uppercase tracking-wider py-3 rounded-full hover:bg-accent-hover transition-colors shadow-md"
               >
                 Let&apos;s Start a Project
               </a>

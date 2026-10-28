@@ -20,10 +20,13 @@ export default {
           border: '#E2DBD0',
         },
         accent: {
-          DEFAULT: '#F43F5E',
-          hover: '#E11D48',
-          muted: 'rgba(244, 63, 94, 0.15)',
+          DEFAULT: '#FFBA64',
+          hover: '#FFA840',
+          ink: '#1A0F00',
+          text: '#B45309',
         },
+        'accent-ink': '#1A0F00',
+        'accent-text': '#B45309',
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
